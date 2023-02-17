@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+body,html
+{
+    overflow: hidden;
+}
+.ras
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 244, 244);
+    transform: translateX-(10%);
+}
+nav
+{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    justify-content: space-around;
+
+}
+nav::after{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 490%;
+    left: 50%;
+    top: 20%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: annie 6s linear infinite;
+    opacity: 50%;
+}
+@keyframes annie
+{
+    50%
+    {
+        top: 50%;
+    }
+}
+nav::before
+{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 350px;
+    top: 300px;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: ann 6s linear infinite;
+    opacity: 50%;
+}
+@keyframes ann
+{
+    50%
+    {
+        top: 100px;
+    }
+}
+
+.rada::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35px;
+    top: 12px;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: ann 6s linear infinite;
+    opacity: 50%;
+}
+.logo
+{
+    color: rgb(39, 227, 218);
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-decoration: wavy;
+    text-transform: uppercase;
+}
+b{
+    color:  rgb(0, 251, 104);
+    font-size: 50px;
+}
+.bidhaa
+{
+    display: flex;
+}
+.bidhaa li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+.bidhaa li a{
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-transform: capitalize;  
+}
+.bidhaa li:hover a,
+.maliLnk a:hover
+{
+    color: rgb(14, 217, 224);
+
+}
+.maliLnk a
+{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+.rada
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.liv0
+{
+    width: 50%;
+}
+.salah
+{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.salah::after
+{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+h1
+{
+    display: block;
+    font-size: 5em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.nunez
+{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+p
+.bts
+{
+    position: relative;
+    left: 100px;
+
+}
+button
+{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 400;
+    color: #fff;
+    background-color: #3d535f;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin: 4px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px #000000;
+}
+button:hover
+{
+    background-color: aqua;
+}
+.picha
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.shah{
+    position: relative;
+}
+
+.picha img{
+    position: relative;
+    height: 100%;
+    width: calc(130, -80%);
+    top: -100%;
+    right: 50px;
+    opacity: 70%;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    animation: animate 4s linear infinite;
+}
+ @keyframes animate
+ {
+    50%
+    {
+        right: 100px;
+        top: -90px;
+        down: 90px;
+    }
+ }
